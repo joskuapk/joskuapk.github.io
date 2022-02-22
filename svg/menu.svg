@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="7.8486mm" height="7.8491mm" version="1.1" viewBox="0 0 7.8486 7.8491" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clipath_lpe_path-effect6751-4">
+   <path d="m239.9 36.483c-2.2927 0-4.1375 1.8466-4.1375 4.1393v18.038c0 2.2927 1.8448 4.1393 4.1375 4.1393h18.04c2.2927 0 4.1375-1.8466 4.1375-4.1393v-18.038c0-2.2927-1.8448-4.1393-4.1375-4.1393z" display="none" fill="#141b41" stroke-width=".88711"/>
+   <path class="powerclip" d="m229.09 29.809h39.664v39.666h-39.664zm10.812 6.6745c-2.2927 0-4.1375 1.8466-4.1375 4.1393v18.038c0 2.2927 1.8448 4.1393 4.1375 4.1393h18.04c2.2927 0 4.1375-1.8466 4.1375-4.1393v-18.038c0-2.2927-1.8448-4.1393-4.1375-4.1393z" fill="#141b41" stroke-width=".88711"/>
+  </clipPath>
+ </defs>
+ <g transform="translate(-193.52 -101.82)">
+  <g transform="matrix(.26458 0 0 .26458 124.7 90.191)" fill="#7ee081">
+   <g transform="translate(-28.888 13.117)">
+    <rect x="291.87" y="49.761" width="23.924" height="3.8278" ry="1.9139"/>
+    <rect x="291.87" y="43.761" width="23.924" height="3.8278" ry="1.9139"/>
+    <rect x="291.87" y="37.761" width="23.924" height="3.8278" ry="1.9139"/>
+   </g>
+   <path transform="translate(26.017 9.1504)" d="m238.76 34.809c-2.5845 0-4.6641 2.0816-4.6641 4.666v20.334c0 2.5845 2.0796 4.666 4.6641 4.666h20.336c2.5844 0 4.6641-2.0816 4.6641-4.666v-20.334c0-2.5845-2.0796-4.666-4.6641-4.666z" clip-path="url(#clipath_lpe_path-effect6751-4)"/>
+   <rect x="261.54" y="45.395" width="26.794" height="26.794" ry="4.2136" fill-opacity=".2" stroke-width=".90323"/>
+  </g>
+ </g>
+</svg>
