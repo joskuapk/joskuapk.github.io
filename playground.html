@@ -12,31 +12,25 @@
     <script src="https://kit.fontawesome.com/46cba54057.js" crossorigin="anonymous"></script>
   </head>
   <div style="padding :4rem;">
-
-    <nav class="nav collapsible">
-      <a href="/">
-        <img src="svg/joskua-logo.svg" alt="Joskua Logo" class="logo">
-      </a>
-      <span class="collapsible__toggler"><i class="fa-solid fa-bars fa-2x nav__toggler "></i></span>
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item">
-          <i class="fa-solid fa-user-astronaut fa-2x"></i>
-          <a href="#">Who i am ?</a>
-        </li>
-        <li class="nav__item">
-          <i class="fa-solid fa-list-check fa-2x"></i>
-          <a href="#">Skills</a>
-        </li>
-        <li class="nav__item">
-          <i class="fa-solid fa-bars-progress fa-2x"></i>
-          <a href="#">Project</a>
-        </li>
-        <li class="nav__item">
-          <i class="fa-solid fa-diagram-project fa-2x"></i>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="profile-box">
+      <div class="profile-box__image">
+        <div class="profile-box__image-wrapper-horizontal">
+          <div class="profile-box__image-wrapper-vertical">
+            <img class="image"
+              src="images/joskua-selfie@2x.webp"
+              alt="A picture of Jóskua"
+              srcset="
+              images/joskua-selfie@2x.webp 2x,
+              images/joskua-selfie@3x.webp 3x
+              "
+            >
+            <img class="ring-one rotate" src="svg/ring-one.svg" alt="">
+            <img class="ring-two rotate--slow" src="svg/ring-one.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="bottom-rectangle"></div>
+    </div>
   </div>
   <script src="js/main.js"></script>
   </body>

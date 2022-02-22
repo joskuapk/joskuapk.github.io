@@ -6,6 +6,9 @@
   --color-light-blue: #bce7fd;
 }
 
+* {
+  box-sizing: border-box;
+}
 /* Typography */
 html {
   /* 62.5% of 15px (Browser default) = 10px is the root element size*/
@@ -186,5 +189,91 @@ a {
   .nav__item > a {
     margin: 1rem;
     font-size: 3rem;
+  }
+}
+/* Profile box */
+.profile-box {
+  width: 100%;
+  border: solid 4px purple;
+  position: relative;
+}
+.profile-box__image {
+  height: 150px;
+  border: solid 1px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+.profile-box__image-wrapper-horizontal {
+  width: 30%;
+  height: 100%;
+  border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: -40px;
+}
+.profile-box__image-wrapper-vertical {
+  height: 95%;
+  width: 100%;
+  border: solid 1px blue;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-box .image {
+  position: absolute;
+  height: 100%;
+}
+.profile-box .ring-one {
+  position: absolute;
+  height: 120%;
+}
+.profile-box .ring-two {
+  position: absolute;
+  height: 150%;
+}
+.profile-box > .bottom-rectangle {
+  width: 100%;
+  height: 80px;
+  background: var(--color-lemon-green);
+  border-radius: 10px;
+  position: relative;
+  bottom: -10px;
+  z-index: 0;
+}
+
+/* ENDLESS ROTATE */
+.rotate {
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate--slow {
+  animation: rotate 2.5s linear infinite;
+}
+@keyframes rotate--slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-2 {
+    grid-template-columns: 1fr 1fr;
   }
 }
