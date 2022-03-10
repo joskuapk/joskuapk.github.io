@@ -4,7 +4,556 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/46cba54057.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Joskua WebDev</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="nav collapsible">
+      <a href="/">
+        <img src="svg/joskua-logo.svg" alt="Joskua Logo" class="logo" />
+      </a>
+      <span class="collapsible__toggler"
+        ><i class="fa-solid fa-bars fa-2x nav__toggler"></i
+      ></span>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item">
+          <i class="fa-solid fa-user-astronaut fa-2x"></i>
+          <a href="#who-i-am">Who i am ?</a>
+        </li>
+        <li class="nav__item">
+          <i class="fa-solid fa-list-check fa-2x"></i>
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="nav__item">
+          <i class="fa-solid fa-bars-progress fa-2x"></i>
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="nav__item">
+          <i class="fa-solid fa-diagram-project fa-2x"></i>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="who-i-am">
+      <div class="grid grid--cols-2">
+        <artticle class="my-picture" data-aos="fade-right">
+          <div class="profile-box">
+            <div class="profile-box__image">
+              <div class="profile-box__image-wrapper-horizontal">
+                <div class="profile-box__image-wrapper-vertical">
+                  <img
+                    class="image"
+                    src="images/joskua-selfie@2x.webp"
+                    alt="A picture of Jóskua"
+                    srcset="
+                      images/joskua-selfie@2x.webp 2x,
+                      images/joskua-selfie@3x.webp 3x
+                    "
+                  />
+                  <img class="ring-one rotate" src="svg/ring-one.svg" alt="" />
+                  <img
+                    class="ring-two rotate--slow"
+                    src="svg/ring-one.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="bottom-rectangle"></div>
+          </div>
+        </artticle>
+        <artticle class="my-info" data-aos="fade-left">
+          <h2 class="my-info__title" id="who-i-am">
+            <i class="fa-solid fa-user-astronaut fa-1x"></i> Who i am?
+          </h2>
+          <p class="my-info__text">
+            I am a collection of atoms named Joskua!<br />
+            <br />
+            Your friendly developer,who's extremely motivated to constantly
+            develop his skills and grow professionally.<br />
+            <br />
+            Someone who is confident in his abilities to come up with
+            interesting ideas to solve problems.
+          </p>
+        </artticle>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="grid grid--cols-2">
+        <article class="quote__image-box" data-aos="fade-right">
+          <img src="svg/robot.svg" alt="A picture of a robot" />
+        </article>
+        <article class="quote__text-box" data-aos="fade-left">
+          <h3 class="quote__text">
+            <img src="svg/quote.svg" alt="" />
+            I believe technology should serve humanity.
+          </h3>
+        </article>
+      </div>
+    </section>
+
+    <img class="top-wave" src="svg/top-wave.svg" alt="" />
+
+    <section class="skills">
+      <article class="skills__title" data-aos="fade-up-right">
+        <h2 id="skills">
+          <i class="fa-solid fa-list-check fa-1x"></i>
+          Skills
+        </h2>
+        <p>
+          I don't know who you are... <br />
+          I don't know what you want... <br /><br />
+          If you are looking for ugly soltions I can tell you I don't have anyy,
+          but what I do have are a very particular set of skills....
+          <br /><br />
+          Skills I have acquired over a very long career. Skills that make me a
+          developer for people like you...
+        </p>
+      </article>
+      <article class="skills__cards">
+        <div class="skill">
+          <div class="card">
+            <header class="card__header">
+              <h3 class="skill__title">Frontend</h3>
+            </header>
+            <img class="waves" src="/svg/card-wave.svg" alt="" />
+            <div class="card__body">
+              <ul class="list">
+                <li class="skill__item">
+                  <img
+                    src="/images/react-logo.webp"
+                    alt="React Js logo"
+                    srcset="
+                      /images/react-logo.webp,
+                      /images/react-logo@2x.webp 2x,
+                      /images/react-logo@3x.webp 3x
+                    "
+                  />
+                  React Js
+                </li>
+                <li class="skill__item icon--beam">
+                  <img
+                    src="/images/net-logo.webp"
+                    alt="Apache net Logo"
+                    srcset="
+                      /images/net-logo.webp,
+                      /images/net-logo@2x.webp 2x,
+                      /images/net-logo@3x.webp 3x
+                    "
+                  />
+                  ASP .NET
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/vue-logo.webp"
+                    alt="Vue Logo"
+                    srcset="
+                      /images/vue-logo.webp,
+                      /images/vue-logo@2x.webp 2x,
+                      /images/vue-logo@3x.webp 3x
+                    "
+                  />
+                  Vue
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/bootstrap-logo.webp"
+                    alt="Google Bootstrap Logo"
+                    srcset="
+                      /images/bootstrap-logo.webp,
+                      /images/bootstrap-logo@2x.webp 2x,
+                      /images/bootstrap-logo@3x.webp 3x
+                    "
+                  />
+                  Bootstrap
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/html-logo.webp"
+                    alt="HTML 5 Logo"
+                    srcset="
+                      /images/html-logo.webp,
+                      /images/html-logo@2x.webp 2x,
+                      /images/html-logo@3x.webp 3x
+                    "
+                  />
+                  HTML 5
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/css-logo.webp"
+                    alt="CSS3 Logo"
+                    srcset="
+                      /images/css-logo.webp,
+                      /images/css-logo@2x.webp 2x,
+                      /images/css-logo@3x.webp 3x
+                    "
+                  />
+                  CSS 3
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/java-logo.webp"
+                    alt="Javascript Logo"
+                    srcset="
+                      /images/java-logo.webp,
+                      /images/java-logo@2x.webp 2x,
+                      /images/java-logo@3x.webp 3x
+                    "
+                  />
+                  Javascript
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="card">
+            <header class="card__header">
+              <h3 class="skill__title">Backend</h3>
+            </header>
+            <img class="waves" src="/svg/card-wave.svg" alt="" />
+            <div class="card__body">
+              <ul class="list">
+                <li class="skill__item">
+                  <img
+                    src="/images/postgres-logo.webp"
+                    alt="Postgres logo"
+                    srcset="
+                      /images/postgres-logo.webp,
+                      /images/postgres-logo@2x.webp 2x,
+                      /images/postgres-logo@3x.webp 3x
+                    "
+                  />
+                  Postgres
+                </li>
+                <li class="skill__item icon--beam">
+                  <img
+                    src="/images/mongodb-logo.webp"
+                    alt="Mongo db Logo"
+                    srcset="
+                      /images/mongodb-logo.webp,
+                      /images/mongodb-logo@2x.webp 2x,
+                      /images/mongodb-logo@3x.webp 3x
+                    "
+                  />
+                  Mongo DB
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/node-logo.webp"
+                    alt="Node JS Logo"
+                    srcset="
+                      /images/node-logo.webp,
+                      /images/node-logo@2x.webp 2x,
+                      /images/node-logo@3x.webp 3x
+                    "
+                  />
+                  Node JS
+                </li>
+                <li class="skill__item icon--beam">
+                  <img
+                    src="/images/net-logo.webp"
+                    alt="Apache net Logo"
+                    srcset="
+                      /images/net-logo.webp,
+                      /images/net-logo@2x.webp 2x,
+                      /images/net-logo@3x.webp 3x
+                    "
+                  />
+                  ASP .NET
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/sql-logo.webp"
+                    alt="SQL Logo"
+                    srcset="
+                      /images/sql-logo.webp,
+                      /images/sql-logo@2x.webp 2x,
+                      /images/sql-logo@3x.webp 3x
+                    "
+                  />
+                  SQL
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="card">
+            <header class="card__header">
+              <h3 class="skill__title">Mobile</h3>
+            </header>
+            <img class="waves" src="/svg/card-wave.svg" alt="" />
+            <div class="card__body">
+              <ul class="list">
+                <li class="skill__item">
+                  <img
+                    src="/images/react-logo.webp"
+                    alt="React Js logo"
+                    srcset="
+                      /images/react-logo.webp,
+                      /images/react-logo@2x.webp 2x,
+                      /images/react-logo@3x.webp 3x
+                    "
+                  />
+                  React Native
+                </li>
+                <li class="skill__item icon--beam">
+                  <img
+                    src="/images/xamarin-logo.webp"
+                    alt="Xamarin Logo"
+                    srcset="
+                      /images/xamarin-logo.webp,
+                      /images/xamarin-logo@2x.webp 2x,
+                      /images/xamarin-logo@3x.webp 3x
+                    "
+                  />
+                  Xamarin
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="card">
+            <header class="card__header">
+              <h3 class="skill__title">Data Science</h3>
+            </header>
+            <img class="waves" src="/svg/card-wave.svg" alt="" />
+            <div class="card__body">
+              <ul class="list">
+                <li class="skill__item">
+                  <img
+                    src="/images/powerbi-logo.webp"
+                    alt="Power Bi logo"
+                    srcset="
+                      /images/powerbi-logo.webp,
+                      /images/powerbi-logo@2x.webp 2x,
+                      /images/powerbi-logo@3x.webp 3x
+                    "
+                  />
+                  Power Bi
+                </li>
+                <li class="skill__item icon--beam">
+                  <img
+                    src="/images/beam-logo.webp"
+                    alt="Apache Beam Logo"
+                    srcset="
+                      /images/beam-logo.webp,
+                      /images/beam-logo@2x.webp 2x,
+                      /images/beam-logo@3x.webp 3x
+                    "
+                  />
+                  Beam
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/dataflow-logo.webp"
+                    alt="Google Dataflow Logo"
+                    srcset="
+                      /images/dataflow-logo.webp,
+                      /images/dataflow-logo@2x.webp 2x,
+                      /images/dataflow-logo@3x.webp 3x
+                    "
+                  />
+                  Dataflow
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/bigquery-logo.webp"
+                    alt="Google Big Query Logo"
+                    srcset="
+                      /images/bigquery-logo.webp,
+                      /images/bigquery-logo@2x.webp 2x,
+                      /images/bigquery-logo@3x.webp 3x
+                    "
+                  />
+                  Big Query
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/datastudio-logo.webp"
+                    alt="Google Big Query Logo"
+                    srcset="
+                      /images/datastudio-logo.webp,
+                      /images/datastudio-logo@2x.webp 2x,
+                      /images/datastudio-logo@3x.webp 3x
+                    "
+                  />
+                  Data Studio
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/pandas-logo.webp"
+                    alt="Google Big Query Logo"
+                    srcset="
+                      /images/pandas-logo.webp,
+                      /images/pandas-logo@2x.webp 2x,
+                      /images/pandas-logo@3x.webp 3x
+                    "
+                  />
+                  Pandas
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/tensorflow-logo.webp"
+                    alt="Google Big Query Logo"
+                    srcset="
+                      /images/tensorflow-logo.webp,
+                      /images/tensorflow-logo@2x.webp 2x,
+                      /images/tensorflow-logo@3x.webp 3x
+                    "
+                  />
+                  Tensor Flow
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/keras-logo.webp"
+                    alt="Google Big Query Logo"
+                    srcset="
+                      /images/keras-logo.webp,
+                      /images/keras-logo@2x.webp 2x,
+                      /images/keras-logo@3x.webp 3x
+                    "
+                  />
+                  Keras
+                </li>
+                <li class="skill__item">
+                  <img
+                    src="/images/excel-logo.webp"
+                    alt="Google Big Query Logo"
+                    srcset="
+                      /images/excel-logo.webp,
+                      /images/excel-logo@2x.webp 2x,
+                      /images/excel-logo@3x.webp 3x
+                    "
+                  />
+                  Excel
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="card">
+            <header class="card__header">
+              <h3 class="skill__title">Dev-ops</h3>
+            </header>
+            <img class="waves" src="/svg/card-wave.svg" alt="" />
+            <div class="card__body">
+              <ul class="list">
+                <li class="skill__item">
+                  <img
+                    src="/images/docker-logo.webp"
+                    alt="Docker logo"
+                    srcset="
+                      /images/docker-logo.webp,
+                      /images/docker-logo@2x.webp 2x,
+                      /images/docker-logo@3x.webp 3x
+                    "
+                  />
+                  Docker
+                </li>
+                <li class="skill__item icon--beam">
+                  <img
+                    src="/images/kubernetes-logo.webp"
+                    alt="Kubernetes Logo"
+                    srcset="
+                      /images/kubernetes-logo.webp,
+                      /images/kubernetes-logo@2x.webp 2x,
+                      /images/kubernetes-logo@3x.webp 3x
+                    "
+                  />
+                  Kubernetes
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <img class="bottom-wave" src="svg/bottom-wave.svg" alt="" />
+    <section class="projects">
+      <h2 class="projects__title indent" id="projects" data-aos="fade-up-right">
+        <i class="fa-solid fa-gears fa-1x"></i> Projects
+      </h2>
+      <p class="projects__text indent" data-aos="fade-up-right">
+        Many live projects jet to come!
+      </p>
+      <div class="top-crack">
+        <div class="top-crack__top-filler"></div>
+        <h3 class="top-crack__text">
+          Click or tap to see the code of this website
+        </h3>
+        <img class="bottom-crack" src="svg/bottom-crack.svg" alt="" />
+      </div>
+      <div class="project__imgs" data-aos="zoom-in">
+        <img src="svg/pizza.svg" alt="" />
+        <img src="svg/progess.svg" alt="" />
+      </div>
+    </section>
+
+    <footer>
+      <h2 class="footer-title" id="contact">
+        <i class="fa-solid fa-diagram-project fa-1x"></i>Contact
+      </h2>
+      <ul class="list contact-list">
+        <li class="contact-list__item">
+          <i class="fa-regular fa-envelope 1x"></i>
+          <a href="mailto:joskua.olivares@gmail.com"
+            >joskua.olivares@gmail.com</a
+          >
+        </li>
+        <li class="contact-list__item">
+          <i class="fa-brands fa-stack-overflow 1x"></i>
+          <a href="https://stackoverflow.com/users/16189702/j%c3%b3skua"
+            >/users/16189702/jóskua</a
+          >
+        </li>
+        <li class="contact-list__item">
+          <i class="fa-brands fa-whatsapp 1x"></i>
+          <a href="https://api.whatsapp.com/send?phone=0525545650464"
+            >+52 5545 6504 64</a
+          >
+        </li>
+        <li class="contact-list__item">
+          <i class="fa-brands fa-linkedin 1x"></i>
+          <a href="https://www.linkedin.com/in/joskua-olivares/"
+            >/joskua-olivares</a
+          >
+        </li>
+        <li class="contact-list__item">
+          <i class="fa-solid fa-square-phone 1x"></i>
+          <a href="tel:+525545650464">+52 5545 6504 64</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
