@@ -390,6 +390,11 @@ a {
   margin: 0;
   padding: 3rem;
 }
+.top-crack__text:hover {
+  color: azure;
+  font-size: 4.3rem;
+  transition: color 0.3s, font-size 0.2s;
+}
 .bottom-crack {
   width: 100%;
   display: block;
